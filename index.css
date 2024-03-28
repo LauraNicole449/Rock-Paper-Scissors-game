@@ -1,0 +1,60 @@
+body{
+    background-color: red;
+    margin:0;
+}
+#logo{
+    text-align:center;
+    position: relative;
+    display:flex;
+    margin: 0 auto;
+}
+#triangle{ 
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin:0 auto;
+    top: 40%;
+    left: 40%;
+}
+.optionCard{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin:0 auto;
+    top: 40%;
+    left: 40%; 
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    background-position: 40px;
+    border: 15px solid #ff0000;
+    background-color: white;
+}
+#paper{
+    background-image: url(images/icon-paper.svg);
+    left: 39%;
+}
+#scissors{
+    background-image: url(images/icon-scissors.svg);
+    right: 30%; 
+}
+#rock{
+    background-image: url(images/icon-rock.svg);   
+    margin: auto;
+    bottom: 10%;
+    right: 44%;
+}
+#container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+}
+.titles{
+    text-align: center;
+    color: white;
+}
+.photo:not([eliminated]){
+    display: flex;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css"  rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <img src="images/logo.svg" id="logo">
+    <div class="ch_Card">
+        <img src="images/bg-triangle.svg" id="triangle" class="photo">
+        <img id="paper" class="optionCard photo" onclick="reply_click(this.id)">
+        <img id="scissors" class="optionCard photo" onclick="reply_click(this.id)">
+        <img id="rock" class="optionCard photo" onclick="reply_click(this.id)">
+    </div>
+    
+    <div class="game" hidden>
+        <div class="titles">
+            <h3>YOU PICKED</h3>
+            <h3>THE HOUSE PICKED</h3>
+        </div>
+        <div class="pr_cards">
+        </div>
+    </div>
+</body>
+</html>
