@@ -8,7 +8,14 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <img src="images/logo.svg" id="logo">
+    <div class="table">
+        <img src="images/logo.svg" id="logo">
+        <div id="score_vz">
+            <p id="textScore">score</p>
+            <p id="score">0</p>
+        </div>
+    </div>
+   
     <div class="ch_Card">
         <img src="images/bg-triangle.svg" id="triangle" class="photo">
         <img id="paper" class="optionCard photo" onclick="reply_click(this.id)">
@@ -16,13 +23,15 @@
         <img id="rock" class="optionCard photo" onclick="reply_click(this.id)">
     </div>
     
-    <div class="game" hidden>
-        <div class="titles">
-            <h3>YOU PICKED</h3>
-            <h3>THE HOUSE PICKED</h3>
-        </div>
-        <div class="pr_cards">
-        </div>
+    <div id="titles" hidden>
+        <h3>YOU PICKED</h3>
+        <h3>THE HOUSE PICKED</h3>
+    </div>
+    <div id="yourCard">
+      
+    </div>
+    <div id="otherCard" hidden>
+       
     </div>
 </body>
 </html>

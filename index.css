@@ -1,12 +1,40 @@
 body{
-    background-color: red;
     margin:0;
+    background-color: #1b2b4c;
+}
+
+.table{
+    text-align:center;
+    margin:15px;
+    margin-left:600px;
+    width: 600px;
+    max-height: 50x;
+    border-width: 1px;
+    border-radius:10px;
+    border-style: solid;
+    border-color: white;
 }
 #logo{
+    margin-top:30px;
+    margin-bottom:10px;
     text-align:center;
     position: relative;
-    display:flex;
-    margin: 0 auto;
+    display:inline-block;
+    margin-right: 370px;
+    
+}
+#score_vz{
+    top: 35px;
+    left:1070px;
+    display:inline-flex;
+    position:absolute;
+    width: 110px;
+    height: 105px;
+    border-radius:10px;
+    background-color: white;
+}
+#scoreText{
+    
 }
 #triangle{ 
     display: flex;
@@ -28,22 +56,25 @@ body{
     width: 100px; 
     height: 100px;
     background-position: 40px;
-    border: 15px solid #ff0000;
+    border: 15px solid;
     background-color: white;
 }
 #paper{
     background-image: url(images/icon-paper.svg);
     left: 39%;
+    border-color: #5571f6;
 }
 #scissors{
     background-image: url(images/icon-scissors.svg);
     right: 30%; 
+    border-color: #eba722;
 }
 #rock{
-    background-image: url(images/icon-rock.svg);   
+    background-image: url(images/icon-rock.svg);
     margin: auto;
     bottom: 10%;
     right: 44%;
+    border-color: #da3a58;
 }
 #container{
     display:flex;
@@ -51,10 +82,26 @@ body{
     justify-content:center;
     flex-direction:row;
 }
-.titles{
+#titles{
     text-align: center;
+    display: flex;
     color: white;
 }
-.photo:not([eliminated]){
+#otherCard{
     display: flex;
+    justify-content: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin:0 auto;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    background-position: 40px;
+    border: 15px solid;
+    background-color: white;
+    top: 200px;
+    left: 300px;
+}
+h3{
+    margin-left: 40px;
 }
